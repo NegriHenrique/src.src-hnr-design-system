@@ -23,7 +23,7 @@
     "build-storybook": "storybook build",
     "plop": "plop",
     "postplop": "prettier --w './src/ui/**/*.{ts,tsx}'",
-    "publish": "pnpm build && pnpm publish --access public --no-git-checks --no-verify"
+    "publish": "pnpm build && pnpm publish --access public --no-git-checks"
   },
   "dependencies": {
     "react": "^19.1.0",
