@@ -15,7 +15,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "prebuild": "rimraf ./dist && mkdir dist",
+    "prebuild": "node bump-version.js && rimraf ./dist && mkdir dist",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
