@@ -1,6 +1,6 @@
 {
   "name": "src.src-hnr-design-system",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "type": "module",
   "files": [
     "dist"
@@ -24,7 +24,8 @@
     "plop": "plop",
     "postplop": "prettier --w './src/ui/**/*.{ts,tsx}'",
     "bump-version": "node bump-version.cjs",
-    "publish": "pnpm run bump-version && pnpm build && pnpm publish --access public --no-git-checks"
+    "publish": "pnpm build && pnpm publish --access public --no-git-checks",
+    "release": "pnpm run bump-version && pnpm run build && pnpm publish --access public --no-git-checks"
   },
   "dependencies": {
     "react": "^19.1.0",
