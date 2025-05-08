@@ -26,7 +26,12 @@
     "paths": {
       "@ui": ["./src/ui/index.ts"],
       "hnr-ui": ["./lib/main.ts"]
-    }
+    },
+
+    /* Declaration */
+    "declaration": true,
+    "declarationDir": "./dist",
+    "emitDeclarationOnly": true
   },
   "include": ["src"]
 }
