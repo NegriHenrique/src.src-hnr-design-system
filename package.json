@@ -1,6 +1,6 @@
 {
   "name": "src.src-hnr-design-system",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "type": "module",
   "files": [
     "dist"
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "prebuild": "node bump-version.js && rimraf ./dist && mkdir dist",
+    "prebuild": "node bump-version.cjs && rimraf ./dist && mkdir dist",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
